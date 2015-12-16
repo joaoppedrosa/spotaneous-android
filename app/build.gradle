@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.es.spotaneous"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project (':library')
+    compile project (':text')
+
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.google.android.gms:play-services:8.1.0'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'me.gujun.android.taggroup:library:1.4@aar'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.flaviofaria:kenburnsview:1.0.6'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.wdullaer:materialdatetimepicker:1.5.3'
+    compile 'com.github.fafaldo:fab-toolbar:1.0.1'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.wrapp.floatlabelededittext:library:0.0.6'
+    compile 'com.github.jlmd:AnimatedCircleLoadingView:1.1.2@aar'
+    compile 'com.shamanland:fab:0.0.8'
+    compile 'com.google.code.gson:gson:1.7.2'
+    compile 'me.drakeet.materialdialog:library:1.2.2'
+    compile 'com.github.eluleci:flatui:3.0.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile project(':BeyondAR_Framework')
+}

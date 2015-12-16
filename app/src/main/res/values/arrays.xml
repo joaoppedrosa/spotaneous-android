@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interesses">
+        <item>Desporto</item>
+        <item>Cinema</item>
+        <item>Museus</item>
+        <item>Música</item>
+        <item>Teatro</item>
+        <item>Jogos</item>
+        <item>Humor</item>
+        <item>Saude</item>
+        <item>Fotografia</item>
+        <item>Politica</item>
+        <item>Conferências</item>
+        <item>Festas</item>
+    </string-array>
+</resources>

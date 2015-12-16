@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#781111</item>
+        <item name="colorPrimaryDark">#781111</item>
+    </style>
+
+    <style name="floatlabelededittext">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ButtonBottomMenu.Events.Normal" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/events</item>
+        <item name="android:background">#455A64</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable" >true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+
+    <style name="ButtonBottomMenu.Events.Select" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/events</item>
+        <item name="android:background">#781111</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+
+    <style name="ButtonBottomMenu.MyEvents.Normal" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/myevents</item>
+        <item name="android:background">#455A64</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+
+    <style name="ButtonBottomMenu.MyEvents.Select" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/myevents</item>
+        <item name="android:background">#781111</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable" >true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+
+
+    <style name="ButtonBottomMenu.Map.Normal" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/map</item>
+        <item name="android:background">#455A64</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable" >true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+
+    <style name="ButtonBottomMenu.Map.Select" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/map</item>
+        <item name="android:background">#781111</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable" >true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+
+    <style name="ButtonBottomMenu.Profile.Normal" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/profile</item>
+        <item name="android:background">#455A64</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable" >true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+
+    <style name="ButtonBottomMenu.Profile.Select" parent="@android:style/Widget.Button">
+        <item name="android:height">60dp</item>
+        <item name="android:drawableTop">@drawable/profile</item>
+        <item name="android:background">#781111</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:focusable" >true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:clickable" >true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <integer-array name="custom_theme">
+        <item>@color/logo_color_2</item> <!-- really much darker color of main color -->
+        <item>@color/logo_color_2</item> <!-- a bit darker color of your main color -->
+        <item>@color/logo_color_2</item> <!-- main color of your theme -->
+        <item>@color/logo_color_2</item> <!-- really much lighter color of main color -->
+    </integer-array>
+</resources>

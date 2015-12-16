@@ -1,0 +1,314 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    tools:context="com.es.spotaneous.fragments.NewEventFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"
+                android:textColor="#455A64"
+                android:text="@string/novo_evento" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/placeholder"
+                app:civ_border_width="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_color="#ffffff"/>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                float:fletPadding="5dp">
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome do Evento"
+                    android:textColor="#455A64"
+                    android:textColorHint="#455A64"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                float:fletPadding="5dp">
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descrição"
+                    android:textColor="#455A64"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="#455A64"
+                    android:textSize="15sp" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:id="@+id/a"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    float:fletPadding="5dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Custo (€)"
+                        android:textColor="#455A64"
+                        android:id="@+id/cost"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#455A64"
+                        android:textSize="15sp" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="200dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    float:fletPadding="5dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Número Máximo de Pessoas"
+                        android:textColor="#455A64"
+                        android:id="@+id/maxpeople"
+                        android:inputType="number"
+                        android:textColorHint="#455A64"
+                        android:textSize="15sp" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left">
+
+                <TextView
+                    android:text="Tipo: "
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textColor="#455A64"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.cengalabs.flatui.views.FlatRadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#0000"
+                    android:checked="true"
+                    flatui:fl_theme="@array/custom_theme"
+                    android:text="Público"
+                    android:layout_margin="5dip"
+                    flatui:fl_size="20dip"
+                    flatui:fl_dotMargin="1dp" />
+
+                <com.cengalabs.flatui.views.FlatRadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Privado"
+                    android:layout_marginLeft="10dp"
+                    flatui:fl_theme="@array/custom_theme"
+                    android:background="#0000"
+                    android:layout_margin="5dip"
+                    flatui:fl_size="20dip"
+                    flatui:fl_dotMargin="1dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Localização: "
+                    android:textSize="15sp"
+                    android:textColor="#455A64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/locationtext"
+                    android:textSize="15sp"
+                    android:textColor="#455A64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/datepicker"
+                        android:drawableLeft="@android:drawable/ic_menu_today"
+                        android:drawablePadding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="Data Inicio"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="#455A64"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/timepicker"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textColor="@android:color/white"
+                        android:background="#455A64"
+                        android:text="Hora Inicio"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/datepickerFim"
+                        android:drawableLeft="@android:drawable/ic_menu_today"
+                        android:drawablePadding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="Data Fim"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="#455A64"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/timepickerFim"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textColor="@android:color/white"
+                        android:background="#455A64"
+                        android:text="Hora Fim"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:text="Interesses"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textColor="#455A64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/aderir"
+                    android:layout_width="0dp"
+                    android:onClick="addEvent"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_inserir"
+                    android:text="Inserir"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

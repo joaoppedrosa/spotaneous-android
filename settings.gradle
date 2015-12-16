@@ -1,0 +1,3 @@
+include ':app',':library',':text'
+include ':BeyondAR_Framework'
+project(':BeyondAR_Framework').projectDir = new File('BeyondAR_Framework')

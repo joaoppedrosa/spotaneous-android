@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TextView
+        android:text="Escolha a localização do evento"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="0.01"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/locationbutton"
+        android:text="Inserir localizaçao"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:background="#781111"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/locationtext"
+        android:layout_above="@id/locationbutton"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="..."
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:background="#455A64"
+        android:layout_height="40dp" />
+</RelativeLayout>
+

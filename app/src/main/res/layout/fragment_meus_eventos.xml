@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.es.spotaneous.fragments.EventosFragment">
+
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/criados"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@color/new_red_color"
+            android:text="Criados"/>
+
+        <Button
+            android:id="@+id/aderidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@color/logo_color_2"
+            android:text="Aderidos"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+    <com.github.jlmd.animatedcircleloadingview.AnimatedCircleLoadingView
+        android:id="@+id/circle_loading_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"
+        app:mainColor="#781111"
+        app:secondaryColor="#455A64"/>
+
+</RelativeLayout>

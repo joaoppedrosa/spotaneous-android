@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="blue_facebook" type="color">#3b5998</item>
+    <item name="red_google" type="color">#d34836</item>
+    <item name="click_button" type="color">#cccccc</item>
+    <item name="logo_color_1" type="color">#BB2C5F</item>
+    <item name="logo_color_1_t" type="color">#CCBB2C5F</item>
+
+    <item name="logo_color_2" type="color">#7A8E8E</item>
+
+    <color name="ColorPrimary">#BB2C5F</color>
+    <color name="ColorPrimaryDark">#b71750</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+    <color name="new_red_color">#781111</color>
+    <color name="new_red_color_transparent">#CC781111</color>
+</resources>

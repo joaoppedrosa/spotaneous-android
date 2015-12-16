@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.es.spotaneous.EditDadosActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/placeholder"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="10dp"
+        app:civ_border_color="#ffffff"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:hint="NAME"
+        android:gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

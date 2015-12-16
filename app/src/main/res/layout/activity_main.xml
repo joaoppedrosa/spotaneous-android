@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.es.spotaneous.LoginActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/bottomactionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="55dp">
+
+            <Button
+                android:id="@+id/buttonEventos"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:onClick="onEventosClick"
+                style="@style/ButtonBottomMenu.Events.Select"
+                android:layout_weight="1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            >
+
+            <Button
+                android:id="@+id/buttonMeusEventos"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:onClick="onMeusEventosClick"
+                style="@style/ButtonBottomMenu.MyEvents.Normal"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="55dp">
+
+            <Button
+                android:id="@+id/buttonMap"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:onClick="onMapaClick"
+                style="@style/ButtonBottomMenu.Map.Normal"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="55dp">
+
+            <Button
+                android:id="@+id/buttonProfile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:onClick="onProfileClick"
+                style="@style/ButtonBottomMenu.Profile.Normal"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
